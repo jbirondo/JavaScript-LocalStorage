@@ -54,10 +54,13 @@
     }).join('')
   }
 
+  function toggleDone(e){
+    if(e.target.matches('input')) 
+  }
+
   addItems.addEventListener('submit', addItem)
-
   populateList(items, itemsList)
-
+  itemsList.addEventListener('click', toggleDone)
 </script>
 
 
